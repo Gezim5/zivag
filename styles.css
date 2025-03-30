@@ -10,6 +10,12 @@ body {
     background-color: #1a1a1a; /* Dark background */
     color: #fff; /* White text for contrast */
     line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
 }
 
 /* Links */
@@ -23,8 +29,10 @@ a {
 header {
     background-color: #000000; /* Black background */
     color: #FFD700; /* Gold text */
-    padding: 20px 30px;
-    text-align: center;
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +40,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.4rem; /* Smaller font size for logo */
+    font-size: 1.1rem; /* Smaller logo size */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -78,6 +86,9 @@ nav ul li a:hover {
     color: white;
     position: relative;
     animation: fadeIn 2s ease-out;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero::after {
@@ -135,6 +146,7 @@ nav ul li a:hover {
     background-color: #000; /* Dark background for services */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -183,8 +195,9 @@ nav ul li a:hover {
     background: linear-gradient(#222, #444); /* Dark gradient */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
-    position: relative;
-    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-us::before {
@@ -222,6 +235,9 @@ nav ul li a:hover {
     background: linear-gradient(to right, #444, #666); /* Darker gradient */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact-us h2 {
@@ -321,7 +337,7 @@ footer {
     }
 
     header .logo {
-        font-size: 1.2rem; /* Smaller logo size */
+        font-size: 1rem; /* Smaller logo size */
     }
 
     nav ul li {
