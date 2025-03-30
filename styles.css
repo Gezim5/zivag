@@ -10,12 +10,6 @@ body {
     background-color: #1a1a1a; /* Dark background */
     color: #fff; /* White text for contrast */
     line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    text-align: center;
 }
 
 /* Links */
@@ -29,10 +23,8 @@ a {
 header {
     background-color: #000000; /* Black background */
     color: #FFD700; /* Gold text */
-    padding: 10px 30px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px 30px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +32,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.1rem; /* Smaller logo size */
+    font-size: 1.4rem; /* Smaller font size for logo */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -75,6 +67,15 @@ nav ul li a {
 nav ul li a:hover {
     color: #fff;
 }
+/* Styling for "Z I V A G" with a gold 3D effect */
+.brand-name {
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #FFD700; /* Gold color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 25px #FFD700;
+    letter-spacing: 2px;
+}
 
 /* Hero Section */
 .hero {
@@ -86,9 +87,6 @@ nav ul li a:hover {
     color: white;
     position: relative;
     animation: fadeIn 2s ease-out;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .hero::after {
@@ -146,7 +144,6 @@ nav ul li a:hover {
     background-color: #000; /* Dark background for services */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -195,9 +192,8 @@ nav ul li a:hover {
     background: linear-gradient(#222, #444); /* Dark gradient */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .about-us::before {
@@ -235,9 +231,6 @@ nav ul li a:hover {
     background: linear-gradient(to right, #444, #666); /* Darker gradient */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .contact-us h2 {
@@ -291,7 +284,7 @@ nav ul li a:hover {
 /* Footer */
 footer {
     background-color: #000000; /* Black background for footer */
-    color: #fff;
+    color: white;
     padding: 40px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -307,15 +300,102 @@ footer {
     margin: 0 auto;
 }
 
+.footer-logo {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .footer-logo h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #FFD700; /* Gold accent */
+    color: #FFD700; /* Gold accent color */
 }
 
 .footer-logo p {
     font-size: 1.1rem;
     color: #fff;
+    font-weight: 300;
+}
+
+.footer-links {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links h4 {
+    font-size: 1.4rem;
+    color: #FFD700; /* Gold accent color */
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+.footer-social {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-social h4 {
+    font-size: 1.4rem;
+    color: #FFD700; /* Gold accent color */
+    margin-bottom: 10px;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social li {
+    margin: 0 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+.footer-social i {
+    font-size: 2.5rem;
+}
+
+.footer-bottom {
+    background-color: #1a1a1a; /* Darker black background for the bottom part */
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
 
 /* Scroll Animations */
@@ -337,7 +417,7 @@ footer {
     }
 
     header .logo {
-        font-size: 1rem; /* Smaller logo size */
+        font-size: 1.2rem; /* Smaller logo size */
     }
 
     nav ul li {
