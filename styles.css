@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a; /* Dark background */
+    background-color: rgba(255, 255, 255, 0.3); /* Dark background */
     color: #fff; /* White text for contrast */
     line-height: 1.6;
 }
@@ -21,8 +21,8 @@ a {
 
 /* Header */
 header {
-    background-color: #000000; /* Black background */
-    color: #FFD700; /* Gold text */
+    background-color: #ffffff; /* Black background */
+    color: #222222; /* Gold text */
     padding: 20px 30px;
     text-align: center;
     display: flex;
@@ -36,7 +36,7 @@ header .logo {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #FFD700;
+    color: #222222;
     transition: color 0.3s ease;
 }
 
@@ -56,7 +56,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFD700;
+    color: #222222;
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 1px;
@@ -65,25 +65,25 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #fff;
+    color: #FFD700;
 }
+
 /* Styling for "Z I V A G" with a gold 3D effect */
 .brand-name {
-    font-size: 3rem;
-    font-family: Arial, sans-serif;
+    font-size: 4rem;
+    font-family: Alfa Slam One;
     font-weight: bold;
-    color: #FFD700; /* Gold color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 25px #FFD700;
+    color: #222222; /* Gold color */
     letter-spacing: 2px;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('background.jpg');
+    background-image: url('background2.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 180px 20px; /* Adjusted padding for better mobile display */
+    padding: 300px 20px; /* Adjusted padding for better mobile display */
     color: white;
     position: relative;
     animation: fadeIn 2s ease-out;
@@ -141,7 +141,7 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     padding: 120px 20px;
-    background-color: #000; /* Dark background for services */
+    background-color: #ffffff; /* Dark background for services */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
     max-width: 1200px;
@@ -151,7 +151,8 @@ nav ul li a:hover {
 .services h2 {
     font-size: 2.6rem;
     font-weight: 700;
-    color: #FFD700;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222222;
     text-align: center;
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -177,7 +178,7 @@ nav ul li a:hover {
 
 .service-item p {
     font-size: 1.1rem;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 30px;
 }
 
@@ -188,8 +189,8 @@ nav ul li a:hover {
 
 /* About Us Section */
 .about-us {
-    padding: 120px 20px;
-    background: linear-gradient(#222, #444); /* Dark gradient */
+    padding: 220px 20px;
+    background-color: white;
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
     position: relative;
@@ -203,41 +204,51 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    background-color: rgba(255, 255, 255, 0.3); /* Dark overlay */
     z-index: -1;
 }
 
 .about-us h2 {
     font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 30px;
     font-weight: 800;
-    color: #FFD700;
+    color: #222222;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
+
+.about-us img {
+    display: block; /* Make the image block-level */
+    margin: 0 auto; /* Center the image */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    height: auto; /* Keep the aspect ratio intact */
+}
+
 .about-us p {
     font-size: 1.2rem;
-    color: #ddd;
-    max-width: 800px;
+    color: #000000;
+    max-width: 1000px;
     margin: 0 auto;
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /* Contact Us Section */
 .contact-us {
     padding: 100px 20px;
-    background: linear-gradient(to right, #444, #666); /* Darker gradient */
+    background-color: rgba(255, 255, 255, 0.3); /* Darker gradient */
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
 }
 
 .contact-us h2 {
     font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 30px;
     font-weight: 700;
-    color: #FFD700;
+    color: #222222;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -250,7 +261,7 @@ nav ul li a:hover {
 }
 
 .contact-item {
-    background-color: #000;
+    background: linear-gradient(to right, #333, #555);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -261,6 +272,7 @@ nav ul li a:hover {
 
 .contact-item i {
     font-size: 3rem;
+    margin-left: 135px;
     color: #FFD700;
     margin-bottom: 20px;
 }
@@ -268,12 +280,15 @@ nav ul li a:hover {
 .contact-item .info-text h3 {
     font-size: 1.5rem;
     font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     color: #FFD700;
 }
 
 .contact-item p {
     font-size: 1.1rem;
-    color: #fff;
+    text-align: center;
+    color: #ffffff;
 }
 
 .contact-item:hover {
@@ -283,8 +298,8 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #000000; /* Black background for footer */
-    color: white;
+    background-color: #ffffff; /* Black background for footer */
+    color: rgb(0, 0, 0);
     padding: 40px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -309,12 +324,13 @@ footer {
 .footer-logo h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #FFD700; /* Gold accent color */
+    font-family: Alfa Slab One;
+    color: #222222; 
 }
 
 .footer-logo p {
     font-size: 1.1rem;
-    color: #fff;
+    color: #000000;
     font-weight: 300;
 }
 
@@ -326,7 +342,7 @@ footer {
 
 .footer-links h4 {
     font-size: 1.4rem;
-    color: #FFD700; /* Gold accent color */
+    color: #222222; 
     margin-bottom: 10px;
 }
 
@@ -340,14 +356,14 @@ footer {
 }
 
 .footer-links a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #FFD700; /* Gold hover effect */
+    color: #FFD700; 
 }
 
 .footer-social {
@@ -358,7 +374,7 @@ footer {
 
 .footer-social h4 {
     font-size: 1.4rem;
-    color: #FFD700; /* Gold accent color */
+    color: #222222; 
     margin-bottom: 10px;
 }
 
@@ -374,7 +390,7 @@ footer {
 }
 
 .footer-social a {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 2rem;
     transition: color 0.3s ease;
 }
@@ -389,7 +405,7 @@ footer {
 
 .footer-bottom {
     background-color: #1a1a1a; /* Darker black background for the bottom part */
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     font-size: 1rem;
 }
@@ -398,30 +414,60 @@ footer {
     margin: 0;
 }
 
-/* Scroll Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    header {
+        padding: 15px 20px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    
+    .hero {
+        padding: 150px 20px;
+    }
+    
+    .services {
+        padding: 80px 20px;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     header {
-        padding: 15px 10px;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    .services {
+        padding: 60px 20px;
     }
 
-    header .logo {
-        font-size: 1.2rem; /* Smaller logo size */
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
     }
 
-    nav ul li {
-        margin: 0 10px;
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 15px 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 120px 15px;
     }
 
     .hero h1 {
@@ -429,31 +475,19 @@ footer {
     }
 
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 25px;
     }
 
     .services {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    .about-us h2 {
-        font-size: 2.5rem;
-    }
-
-    .about-us p {
-        font-size: 1.1rem;
+        padding: 50px 15px;
     }
 
     .contact-info {
         grid-template-columns: 1fr;
-    }
-
-    .footer-logo h3 {
-        font-size: 1.6rem;
-    }
-
-    .footer-logo p {
-        font-size: 1rem;
     }
 }
